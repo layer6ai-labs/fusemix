@@ -10,7 +10,7 @@ Data-Efficient Multimodal Fusion on a Single GPU
 </h1>
 
 <p align="center">
-  <a href='https://arxiv.org/abs/2312.10144'><img src='https://img.shields.io/badge/arXiv-2304.13742-b31b1b.svg' /></a>
+  <a href='https://arxiv.org/abs/2312.10144'><img src='https://img.shields.io/badge/arXiv-2312.10144-b31b1b.svg' /></a>
 </p>
   
 <h4>
