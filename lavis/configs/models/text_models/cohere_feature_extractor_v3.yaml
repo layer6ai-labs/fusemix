@@ -1,0 +1,9 @@
+model:
+  arch: cohere_feature_extractor
+  model_type: v3
+  pretrained_model_name: "embed-english-v3.0"
+
+preprocess:
+  text_processor:
+    eval:
+      name: "blip_caption"

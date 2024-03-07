@@ -1,0 +1,9 @@
+model:
+  arch: dinov2_feature_extractor
+  model_type: vitl14
+  pretrained_model_name: "dinov2_vitl14"
+
+preprocess:
+  vis_processor:
+    eval:
+      name: "dinov2_image_eval"

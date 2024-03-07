@@ -1,0 +1,10 @@
+datasets:
+  flickr30k_feat_dinov2_vitg14_bge_large: # name of the dataset builder
+    data_type: features # [images|videos|features]
+
+    build_info:
+      features:
+        storage:
+          test:
+            vis: features/dinov2_feature_extractor/vitg14/flickr30k/test.dpt
+            text: features/bge_feature_extractor/large/flickr30k/test.dpt

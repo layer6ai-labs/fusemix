@@ -1,0 +1,10 @@
+datasets:
+  conceptual_caption_3m_feat_dinov2_vitg14_e5_large: # name of the dataset builder
+    data_type: features # [images|videos|features]
+
+    build_info:
+      features:
+        storage:
+          train:
+            vis: features/dinov2_feature_extractor/vitg14/conceptual_caption_3m/train.dpt
+            text: features/e5_feature_extractor/large/conceptual_caption_3m/train.dpt

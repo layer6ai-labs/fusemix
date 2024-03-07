@@ -1,0 +1,23 @@
+model:
+  arch: mlp_contrastive_fusion
+  model_type: base
+
+  vis_embed_dim: 768 # should be overwritten in user config based on visual model used
+  text_embed_dim: 768 # should be overwritten in user config based on text model used
+
+  proj_embed_dim: 128
+  proj_bias: True
+  num_layers_vis: 1
+  num_layers_text: 1
+  expansion_factor: 4
+  dropout: 0.
+
+preprocess:
+  vis_processor:
+    train:
+      name: "feat_train"
+      noise_std: 0
+  text_processor:
+    train:
+      name: "feat_train"
+      noise_std: 0

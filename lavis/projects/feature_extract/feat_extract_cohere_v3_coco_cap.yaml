@@ -1,0 +1,34 @@
+model:
+  arch: cohere_feature_extractor
+  model_type: v3
+
+datasets:
+  coco_caption:
+    vis_processor:
+      train:
+        # dummy processor to ensure images from the dataset can collate, images are ignored for text models
+        name: "blip_image_eval"
+        image_size: 32 # since not used, can be small to minimize memory usage
+    text_processor:
+      train:
+        name: "blip_caption"
+
+run:
+  task: feature_extraction
+
+  # dataloading
+  num_workers: 8
+  batch_size_train: 512
+  batch_size_eval: 512
+
+  evaluate: True
+  test_splits: ["train"]
+
+  # misc
+  seed: 42
+  output_dir: "output/feature_extraction" # not used
+  
+  # distribution
+  device: "cuda"
+  world_size: 1
+  distributed: False

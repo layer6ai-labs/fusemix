@@ -1,0 +1,43 @@
+model:
+  arch: mlp_contrastive_fusion
+  model_type: base
+
+  vis_embed_dim: 1536 # embed. dim. of specific visual model used here
+  text_embed_dim: 1024 # embed. dim. of specific text model used here
+
+  proj_embed_dim: 512
+  num_layers: 4
+  expansion_factor: 4
+  dropout: 0.6
+
+  pretrained: "output/fusion/mlp_contrastive_fusion/pretrain/dinov2_vitg14_cohere_v3_coco_vg_sbu_cap_cc3m/512proj_4vlayer_5tlayer_4exp_06drop_0noise_1e6warm100_1e3lr_cosine_500ep_01wd_40960bs_mixup_1/checkpoint_best.pth"
+
+datasets:
+  coco_retrieval_feat_dinov2_vitg14_bge_large:
+    vis_processor:
+        eval:
+          name: "feat_eval"
+    text_processor:
+        eval:
+          name: "feat_eval"
+
+run:
+  task: retrieval
+
+  # dataloading
+  num_workers: 8
+  batch_size_train: 1024
+  batch_size_eval: 1024
+  
+  evaluate: True
+  test_splits: ["test"]
+
+  # misc
+  seed: 42
+  output_dir: "output/fusion/mlp_contrastive_fusion/coco_retrieval/dinov2_vitg14_bge_large_coco_vg_sbu_cap_cc3m/512proj_4layer_4exp_06drop_0noise_1e6warm100_1e3lr_cosine_500ep_01wd_40960bs_mixup_1"
+  
+  # distribution
+  device: "cuda"
+  world_size: 1
+  distributed: False
+  use_dist_eval_sampler: False

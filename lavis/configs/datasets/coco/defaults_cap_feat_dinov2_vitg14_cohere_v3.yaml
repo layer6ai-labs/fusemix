@@ -1,0 +1,10 @@
+datasets:
+  coco_caption_feat_dinov2_vitg14_cohere_v3: # name of the dataset builder
+    data_type: features # [images|videos|features]
+
+    build_info:
+      features:
+        storage:
+          train:
+            vis: features/dinov2_feature_extractor/vitg14/coco_caption/train.dpt
+            text: features/cohere_feature_extractor/v3/coco_caption/train.dpt

@@ -1,0 +1,9 @@
+model:
+  arch: bge_feature_extractor
+  model_type: large
+  pretrained_model_name: "BAAI/bge-large-en-v1.5"
+
+preprocess:
+  text_processor:
+    eval:
+      name: "blip_caption"

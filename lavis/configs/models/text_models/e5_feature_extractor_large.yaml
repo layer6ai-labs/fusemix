@@ -1,0 +1,10 @@
+model:
+  arch: e5_feature_extractor
+  model_type: large
+  pretrained_model_name: "intfloat/e5-large-v2"
+
+preprocess:
+  text_processor:
+    eval:
+      name: "blip_caption"
+      prompt: "query: "

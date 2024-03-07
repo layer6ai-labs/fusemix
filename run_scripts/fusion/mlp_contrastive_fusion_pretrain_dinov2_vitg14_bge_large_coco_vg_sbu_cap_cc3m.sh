@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python train.py --cfg-path lavis/projects/fusion/mlp_contrastive_fusion_pretrain_dinov2_vitg14_bge_large_coco_vg_sbu_cap_cc3m.yaml
