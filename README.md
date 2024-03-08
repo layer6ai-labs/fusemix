@@ -89,7 +89,7 @@ If you find this work useful in your research, please cite the following paper:
 ```
 @inproceedings{vouitsis2024dataefficient,
       title={Data-Efficient Multimodal Fusion on a Single GPU}, 
-      author={Noël Vouitsis and Zhaoyan Liu and Satya Krishna Gorti and Valentin Villecroze and Jesse C. Cresswell and Guangwei Yu and Gabriel Loaiza-Ganem and Maksims Volkovs},
+      author={No{\"e}l Vouitsis and Zhaoyan Liu and Satya Krishna Gorti and Valentin Villecroze and Jesse C. Cresswell and Guangwei Yu and Gabriel Loaiza-Ganem and Maksims Volkovs},
       booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
       year={2024},
 }
