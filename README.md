@@ -18,7 +18,7 @@ Data-Efficient Multimodal Fusion on a Single GPU
 
 
 ## Introduction
-This repository contains the official implementation of our <b>CVPR 2024</b> paper <a href='https://arxiv.org/abs/2312.10144'>Data-Efficient Multimodal Fusion on a Single GPU</a>. We release code for the image-text setting, including code for dataset downloading, feature extraction, fusion training and evaluation. We note that our code is based on the [LAVIS](https://github.com/salesforce/LAVIS) library.
+This repository contains the official implementation of our <b>CVPR 2024 Highlight</b> paper <a href='https://arxiv.org/abs/2312.10144'>Data-Efficient Multimodal Fusion on a Single GPU</a>. We release code for the image-text setting, including code for dataset downloading, feature extraction, fusion training and evaluation. We note that our code is based on the [LAVIS](https://github.com/salesforce/LAVIS) library.
 
 ## Installation
 
